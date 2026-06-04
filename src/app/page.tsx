@@ -20,7 +20,7 @@ export default function Home() {
   const endRef = useRef<any>(null);//refernce to anything
 
   useEffect(() => {// Runs some code after updating messages
-    endRef.current?.scrollIntoView({
+    endRef.current?.scrollIntoView({ // scroll to new dom element update
       behavior: "smooth",
     });
   }, [messages]);
@@ -38,7 +38,7 @@ export default function Home() {
 
     setMessages((m) => [
       ...m,
-      userMessage,
+      userMessage,  // wont update immediately as state updates are async
     ]);
 
     setInput("");

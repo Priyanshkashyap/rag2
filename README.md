@@ -1,1 +1,2 @@
 so this uses an old version of pdf parser as newer one isnt compatible with next 16. check the v. uses docker to run the chroma db . groq with openai config for llm completions and ollama for embeddings. in the node modules of pdf parse an example pdf link is there so remove all that.
+works only for stuff with either summarise , answer or compare in the query lol but also with more context.

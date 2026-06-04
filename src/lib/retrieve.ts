@@ -16,7 +16,7 @@ export async function retrieveVectors(
   const results = await collection.query({
     queryEmbeddings,
     nResults: topK,
-  });
+  });//ek hi form of results hota hai chromadb object ka usi me return ayega
 console.log(results);
   return results;
 }

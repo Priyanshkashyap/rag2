@@ -17,7 +17,7 @@ export async function storeVectors(
       embeddingFunction: null,
     });
 
-  await collection.add({
+  await collection.add({ // format of chromadb object
     ids: docs.map(
       (_, index) => `doc_${index}`
     ),
