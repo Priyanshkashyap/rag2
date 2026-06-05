@@ -56,6 +56,7 @@ export async function POST(req: Request) {
   else
   return answer(query,context,history);
 }
+// after retrieval u can feed the ans to the query to llm again for verifying how accurate it was compared to initial question through a grading system or just yes/no.if llm say it was not what it wanted then return promt saying to retry query again
   catch (err: any) {
     console.error(err);
     return Response.json(
